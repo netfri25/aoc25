@@ -4,9 +4,14 @@
 # don't ignore directories
 !*/
 
-# don't ignore files named `input` or files that have an extension
+# don't ignore files that have an extension
 !*.*
 
 # ignore junk files
 *.o
 *.hi
+
+# don't include puzzle files
+puzzle.md
+input
+example
