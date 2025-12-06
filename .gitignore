@@ -6,3 +6,7 @@
 
 # don't ignore files named `input` or files that have an extension
 !*.*
+
+# ignore junk files
+*.o
+*.hi
