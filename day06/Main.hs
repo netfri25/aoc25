@@ -30,7 +30,7 @@ part2 = sum . map (uncurry foldl1) . parseInput
     parseInput :: String -> Input
     parseInput content =
       let lines' = lines content
-          ops = map parseOp $ filter (/=' ') $ last lines'
+          ops = map parseOp $ removeSpace $ last lines'
           values :: [[Int]] = map (map read) $ split "" $ map removeSpace $ transpose $ init lines'
        in zip ops values
 
